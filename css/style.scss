@@ -77,23 +77,20 @@ body{
                     margin-top: 60px;
                     margin-left: 25px;
                 }
-
             }
+
+            .settings :hover {
+                background-image: url(../assets/images/hovset.png);
+            }
+             .settings img :hover {
+                display:none;
+            }
+           
         }
-        
 
+           
     }
-
-
-
-
-
-
-
-
-
-
-
+      
 
 
 

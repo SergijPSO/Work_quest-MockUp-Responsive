@@ -60,6 +60,10 @@ body {
         #wrapper nav .options .home .burger_adv, #wrapper nav .options .notification .burger_adv, #wrapper nav .options .settings .burger_adv, #wrapper nav .options .burger .burger_adv {
           margin-top: 60px;
           margin-left: 25px; }
+      #wrapper nav .options .settings :hover {
+        background-image: url(../assets/images/hovset.png); }
+      #wrapper nav .options .settings img :hover {
+        display: none; }
   #wrapper .main_section {
     width: 100%;
     margin-top: 50px;
