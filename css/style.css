@@ -10,7 +10,7 @@ body {
   height: 766px; }
 
 #wrapper {
-  width: 100%;
+  width: 1366px;
   height: 100%;
   margin: 0 auto; }
   #wrapper nav {
@@ -65,20 +65,49 @@ body {
       #wrapper nav .options .settings img :hover {
         display: none; }
   #wrapper .main_section {
+    display: flex;
     width: 100%;
     margin-top: 50px;
     height: 457px;
     background-color: #20253b; }
     #wrapper .main_section .lang {
+      position: absolute;
       height: 40px;
       width: 70px;
-      background-color: purple;
+      background-color: grey;
       border-radius: 0 30px 30px 0;
       color: white; }
+    #wrapper .main_section .container_inf .description {
+      position: relative;
+      margin-left: 25%;
+      width: 480px;
+      height: 296px;
+      left: 20%; }
+      #wrapper .main_section .container_inf .description .description_title {
+        color: #fff;
+        font-family: gotham_black;
+        font-size: 15pt;
+        text-transform: uppercase; }
+      #wrapper .main_section .container_inf .description .description_text {
+        color: #fff;
+        font-family: gotham_black;
+        font-size: 7.2pt; }
+    #wrapper .main_section .sharik {
+      position: relative;
+      left: 57%;
+      width: 80px;
+      height: 80px;
+      border-radius: 100%;
+      background-color: #fff; }
+    #wrapper .main_section .office {
+      left: 60%;
+      top: 145px;
+      position: absolute;
+      width: 383px;
+      height: 574px; }
   #wrapper footer {
     height: 140px;
     width: 100%;
-    background-color: #27a860;
-    margin-bottom: -10px; }
+    background-color: #27a860; }
 
 /*# sourceMappingURL=style.css.map */
