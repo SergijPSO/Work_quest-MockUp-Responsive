@@ -12,7 +12,7 @@ $primary-bcg: #20253b;
 $footer-green: #27a860;
 // variables ends here !!!
 body{
-    height: 766px;
+    background-color: #d0d0d0;
 }
 #wrapper{
     width: 1366px;
@@ -33,20 +33,28 @@ body{
             height: 122px;
             background-color:$primary-bcg;
             border-radius: 0 0 30px 30px ;
-            left:20%;
+            left:215px;
             .logo_image{
                 margin-left: 60px;
                 margin-top: 16px;
             }
-            
         }
         .nav_inf{
             position: absolute;
             width: 200px;
             height: 50px;
-            left:40%;
+            left:537px;
+            top:43px;
             p{
+            font-family: gotham_medium;
+            line-height: 30px;
+            }
+            .service_inf{
                 color:$footer-green;
+                font-size:10pt;
+            }
+            .service{
+                font-size:13pt;
             }
         }
         .options{
@@ -86,7 +94,6 @@ body{
         }
 
     }
-
         .main_section{
         display:flex;
         width:100%;
@@ -97,9 +104,16 @@ body{
             position:absolute;
             height:40px;
             width: 70px;
-            background-color: grey;
-            border-radius : 0 30px 30px 0;
-            color:white;
+            background-color: #d0d0d0;
+            border-radius: 0 30px 30px 0;
+            top:520px;
+            .language {
+                color:white;
+                font-family: gotham_black;
+                font-size:15pt;
+                text-align: center;
+                margin-top:7px;
+            }
         }
         .container_inf{
             .description{
@@ -120,18 +134,27 @@ body{
                 font-size:7.2pt;
                 }
             }   
-           
         }
              
         .sharik{
+            top:20px;
             position:relative;
             left:57%;
-            width: 80px;
-            height: 80px;
+            width: 50px;
+            height: 50px;
             border-radius: 100%;
             background-color: #fff;
+            img {
+                position: relative;
+                top: 9px;
+                left:9px;
+                height: 30px;
+                width: 30px;
+                margin:0 auto;
+            }
+
         }
-        .office{
+       .office{
             left:60%;
             top:145px;
             position:absolute;
@@ -139,11 +162,24 @@ body{
             height: 574px;
         }
     }
-    
     footer{
         height: 140px;
         width: 100%;
         background-color: $footer-green;
-        // margin-bottom: -15px;;
+        margin-bottom:-170px;
+            .contact_us{
+                top:25px;
+           position:relative;
+           left:500px;
+           height: 65px;
+           width:190px;
+           font-size:7,2pt;
+           p{
+            //    position:inherit;
+               color:white;
+               font-family:gotham_medium;
+               line-height: 30px;              
+           }
+       }
     }
 }

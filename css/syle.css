@@ -7,7 +7,7 @@
   margin: 0; }
 
 body {
-  background-color: #d0d0d0; }
+  height: 766px; }
 
 #wrapper {
   width: 1366px;
@@ -27,7 +27,7 @@ body {
       height: 122px;
       background-color: #20253b;
       border-radius: 0 0 30px 30px;
-      left: 215px; }
+      left: 20%; }
       #wrapper nav .logo .logo_image {
         margin-left: 60px;
         margin-top: 16px; }
@@ -35,16 +35,9 @@ body {
       position: absolute;
       width: 200px;
       height: 50px;
-      left: 537px;
-      top: 43px; }
+      left: 40%; }
       #wrapper nav .nav_inf p {
-        font-family: gotham_medium;
-        line-height: 30px; }
-      #wrapper nav .nav_inf .service_inf {
-        color: #27a860;
-        font-size: 10pt; }
-      #wrapper nav .nav_inf .service {
-        font-size: 13pt; }
+        color: #27a860; }
     #wrapper nav .options {
       position: relative;
       left: 65%;
@@ -81,15 +74,9 @@ body {
       position: absolute;
       height: 40px;
       width: 70px;
-      background-color: #d0d0d0;
+      background-color: grey;
       border-radius: 0 30px 30px 0;
-      top: 520px; }
-      #wrapper .main_section .lang .language {
-        color: white;
-        font-family: gotham_black;
-        font-size: 15pt;
-        text-align: center;
-        margin-top: 7px; }
+      color: white; }
     #wrapper .main_section .container_inf .description {
       position: relative;
       margin-left: 25%;
@@ -106,20 +93,12 @@ body {
         font-family: gotham_black;
         font-size: 7.2pt; }
     #wrapper .main_section .sharik {
-      top: 20px;
       position: relative;
       left: 57%;
       width: 50px;
       height: 50px;
       border-radius: 100%;
       background-color: #fff; }
-      #wrapper .main_section .sharik img {
-        position: relative;
-        top: 9px;
-        left: 9px;
-        height: 30px;
-        width: 30px;
-        margin: 0 auto; }
     #wrapper .main_section .office {
       left: 60%;
       top: 145px;
@@ -129,18 +108,6 @@ body {
   #wrapper footer {
     height: 140px;
     width: 100%;
-    background-color: #27a860;
-    margin-bottom: -170px; }
-    #wrapper footer .contact_us {
-      top: 25px;
-      position: relative;
-      left: 500px;
-      height: 65px;
-      width: 190px;
-      font-size: 7,2pt; }
-      #wrapper footer .contact_us p {
-        color: white;
-        font-family: gotham_medium;
-        line-height: 30px; }
+    background-color: #27a860; }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=syle.css.map */
