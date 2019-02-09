@@ -4,20 +4,24 @@
     margin:0;
     list-style: none;
 }
-.my_reset{
-    margin:0;
-}
 // variables 
 $primary-bcg: #20253b;
 $footer-green: #27a860;
 // variables ends here !!!
 body{
+    width: 100%;
+	min-width: 1366px;
+	max-width: 1900px;
+    margin:0 auto;
+    display:relative;
     background-color: #d0d0d0;
 }
 #wrapper{
-    width: 1366px;
-    height: 100%;
-    margin:0 auto;
+    // width: 100%;
+	// min-width: 1366px;
+	// max-width: 1900px;
+    // height: 100%;
+    // margin:0 auto;
     nav{
         background-color: #fff;
         width:100%;
@@ -26,44 +30,38 @@ body{
         border-left-style: none;
         border-right-style: none;
         border-radius: 0 0 30px 30px ;
-       
-        .logo{
-            position:relative;
+        .menu{
+            display:flex;
+            .logo{
             width: 200px;
             height: 122px;
             background-color:$primary-bcg;
             border-radius: 0 0 30px 30px ;
-            left:215px;
+            margin-left:215px;
             .logo_image{
                 margin-left: 60px;
                 margin-top: 16px;
             }
         }
         .nav_inf{
-            // position: relative;
             width: 200px;
             height: 50px;
-            left:537px;
-            // top:43px;
+            margin-left:125px;
+            margin-top:43px;
             p{
             font-family: gotham_medium;
             line-height: 30px;
             }
             .service_inf{
                 color:$footer-green;
-                font-size:10pt;
+                font-size:13px;
             }
             .service{
-                font-size:13pt;
+                font-size:20px;
             }
-        }.menu{
-            position: relative;
-            width:505px;
-
         }
         .options{
-            // position:relative;
-            left:65%;
+            margin-left:131px;
             display: flex;
             justify-content: space-around;
             width: 500px;
@@ -95,11 +93,17 @@ body{
                 display:none;
             }
         }
-
+        }
+    }
+    .main_content{
+        width:1366px;
+        display:relative;
+        margin:0 auto;
     }
         .main_section{
-        display:flex;
+        display:relative;
         width:100%;
+        // width:1366px;
         margin-top:50px;
         height: 457px;
         background-color: $primary-bcg;
@@ -118,51 +122,61 @@ body{
                 margin-top:7px;
             }
         }
+        .main_content{
+            width:1366px;
+            display: flex;
+        }
         .container_inf{
             .description{
-            position:relative;
-            margin-left: 25%;
+            margin-left: 16%;
+            margin-right:72px;
             width:480px;
             height: 296px;
             left:20%;
                 .description_title{
                 color:#fff;
                 font-family: gotham_black;
-                font-size:15pt;
+                font-size:23px;
                 text-transform:uppercase;
+                margin-bottom:20px;
+                margin-top:40px;
                 }
                 .description_text{
-                color:#fff;
+                text-indent:1.5em;
+                }
+                .description_text:nth-child(14n){
+                    margin-top:25px;
+                }
+                p{
+                    color:#fff;
                 font-family: gotham_black;
-                font-size:7.2pt;
+                font-size:13px;
+                line-height:16px;
                 }
             }   
         }
              
         .sharik{
-            top:20px;
-            position:relative;
-            left:57%;
+            margin-top:20px;
             width: 50px;
             height: 50px;
             border-radius: 100%;
             background-color: #fff;
             img {
-                position: relative;
-                top: 9px;
-                left:9px;
+                margin-top: 9px;
+                margin-left:9px;
                 height: 30px;
                 width: 30px;
-                margin:0 auto;
             }
-
         }
        .office{
-            left:60%;
-            top:145px;
-            position:absolute;
+            margin-right:25px;
             width:383px;
-            height: 574px;
+            height: 571px;
+            img {
+                position:absolute;
+                top:140px;
+            }
         }
     }
     footer{
@@ -170,15 +184,14 @@ body{
         width: 100%;
         background-color: $footer-green;
         margin-bottom:-170px;
-            .contact_us{
-                top:25px;
+           .contact_us{
+           top:25px;
            position:relative;
            left:500px;
            height: 65px;
            width:190px;
            font-size:7,2pt;
            p{
-            //    position:inherit;
                color:white;
                font-family:gotham_medium;
                line-height: 30px;              

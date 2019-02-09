@@ -3,144 +3,152 @@
   margin: 0;
   list-style: none; }
 
-.my_reset {
-  margin: 0; }
-
 body {
+  width: 100%;
+  min-width: 1366px;
+  max-width: 1900px;
+  margin: 0 auto;
+  display: relative;
   background-color: #d0d0d0; }
 
-#wrapper {
-  width: 1366px;
-  height: 100%;
-  margin: 0 auto; }
-  #wrapper nav {
-    background-color: #fff;
-    width: 100%;
-    height: 122px;
-    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
-    border-left-style: none;
-    border-right-style: none;
-    border-radius: 0 0 30px 30px; }
-    #wrapper nav .logo {
-      position: relative;
+#wrapper nav {
+  background-color: #fff;
+  width: 100%;
+  height: 122px;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+  border-left-style: none;
+  border-right-style: none;
+  border-radius: 0 0 30px 30px; }
+  #wrapper nav .menu {
+    display: flex; }
+    #wrapper nav .menu .logo {
       width: 200px;
       height: 122px;
       background-color: #20253b;
       border-radius: 0 0 30px 30px;
-      left: 215px; }
-      #wrapper nav .logo .logo_image {
+      margin-left: 215px; }
+      #wrapper nav .menu .logo .logo_image {
         margin-left: 60px;
         margin-top: 16px; }
-    #wrapper nav .nav_inf {
+    #wrapper nav .menu .nav_inf {
       width: 200px;
       height: 50px;
-      left: 537px; }
-      #wrapper nav .nav_inf p {
+      margin-left: 125px;
+      margin-top: 43px; }
+      #wrapper nav .menu .nav_inf p {
         font-family: gotham_medium;
         line-height: 30px; }
-      #wrapper nav .nav_inf .service_inf {
+      #wrapper nav .menu .nav_inf .service_inf {
         color: #27a860;
-        font-size: 10pt; }
-      #wrapper nav .nav_inf .service {
-        font-size: 13pt; }
-    #wrapper nav .menu {
-      position: relative;
-      width: 505px; }
-    #wrapper nav .options {
-      left: 65%;
+        font-size: 13px; }
+      #wrapper nav .menu .nav_inf .service {
+        font-size: 20px; }
+    #wrapper nav .menu .options {
+      margin-left: 131px;
       display: flex;
       justify-content: space-around;
       width: 500px;
       width: 340px;
       height: 122px; }
-      #wrapper nav .options .home, #wrapper nav .options .notification, #wrapper nav .options .settings, #wrapper nav .options .burger {
+      #wrapper nav .menu .options .home, #wrapper nav .menu .options .notification, #wrapper nav .menu .options .settings, #wrapper nav .menu .options .burger {
         width: 80px;
         height: 122px;
         border-radius: 0 0 30px 30px; }
-        #wrapper nav .options .home:hover, #wrapper nav .options .notification:hover, #wrapper nav .options .settings:hover, #wrapper nav .options .burger:hover {
+        #wrapper nav .menu .options .home:hover, #wrapper nav .menu .options .notification:hover, #wrapper nav .menu .options .settings:hover, #wrapper nav .menu .options .burger:hover {
           background-color: #0c82c3; }
-        #wrapper nav .options .home:active, #wrapper nav .options .notification:active, #wrapper nav .options .settings:active, #wrapper nav .options .burger:active {
+        #wrapper nav .menu .options .home:active, #wrapper nav .menu .options .notification:active, #wrapper nav .menu .options .settings:active, #wrapper nav .menu .options .burger:active {
           background-color: #27a860; }
-        #wrapper nav .options .home img, #wrapper nav .options .notification img, #wrapper nav .options .settings img, #wrapper nav .options .burger img {
+        #wrapper nav .menu .options .home img, #wrapper nav .menu .options .notification img, #wrapper nav .menu .options .settings img, #wrapper nav .menu .options .burger img {
           margin-top: 48px;
           margin-left: 17px; }
-        #wrapper nav .options .home .burger_adv, #wrapper nav .options .notification .burger_adv, #wrapper nav .options .settings .burger_adv, #wrapper nav .options .burger .burger_adv {
+        #wrapper nav .menu .options .home .burger_adv, #wrapper nav .menu .options .notification .burger_adv, #wrapper nav .menu .options .settings .burger_adv, #wrapper nav .menu .options .burger .burger_adv {
           margin-top: 60px;
           margin-left: 25px; }
-      #wrapper nav .options .settings :hover {
+      #wrapper nav .menu .options .settings :hover {
         background-image: url(../assets/images/hovset.png); }
-      #wrapper nav .options .settings img :hover {
+      #wrapper nav .menu .options .settings img :hover {
         display: none; }
-  #wrapper .main_section {
-    display: flex;
-    width: 100%;
-    margin-top: 50px;
-    height: 457px;
-    background-color: #20253b; }
-    #wrapper .main_section .lang {
+#wrapper .main_content {
+  width: 1366px;
+  display: relative;
+  margin: 0 auto; }
+#wrapper .main_section {
+  display: relative;
+  width: 100%;
+  margin-top: 50px;
+  height: 457px;
+  background-color: #20253b; }
+  #wrapper .main_section .lang {
+    position: absolute;
+    height: 40px;
+    width: 70px;
+    background-color: #d0d0d0;
+    border-radius: 0 30px 30px 0;
+    top: 520px; }
+    #wrapper .main_section .lang .language {
+      color: white;
+      font-family: gotham_black;
+      font-size: 15pt;
+      text-align: center;
+      margin-top: 7px; }
+  #wrapper .main_section .main_content {
+    width: 1366px;
+    display: flex; }
+  #wrapper .main_section .container_inf .description {
+    margin-left: 16%;
+    margin-right: 72px;
+    width: 480px;
+    height: 296px;
+    left: 20%; }
+    #wrapper .main_section .container_inf .description .description_title {
+      color: #fff;
+      font-family: gotham_black;
+      font-size: 23px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      margin-top: 40px; }
+    #wrapper .main_section .container_inf .description .description_text {
+      text-indent: 1.5em; }
+    #wrapper .main_section .container_inf .description .description_text:nth-child(14n) {
+      margin-top: 25px; }
+    #wrapper .main_section .container_inf .description p {
+      color: #fff;
+      font-family: gotham_black;
+      font-size: 13px;
+      line-height: 16px; }
+  #wrapper .main_section .sharik {
+    margin-top: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #fff; }
+    #wrapper .main_section .sharik img {
+      margin-top: 9px;
+      margin-left: 9px;
+      height: 30px;
+      width: 30px; }
+  #wrapper .main_section .office {
+    margin-right: 25px;
+    width: 383px;
+    height: 571px; }
+    #wrapper .main_section .office img {
       position: absolute;
-      height: 40px;
-      width: 70px;
-      background-color: #d0d0d0;
-      border-radius: 0 30px 30px 0;
-      top: 520px; }
-      #wrapper .main_section .lang .language {
-        color: white;
-        font-family: gotham_black;
-        font-size: 15pt;
-        text-align: center;
-        margin-top: 7px; }
-    #wrapper .main_section .container_inf .description {
-      position: relative;
-      margin-left: 25%;
-      width: 480px;
-      height: 296px;
-      left: 20%; }
-      #wrapper .main_section .container_inf .description .description_title {
-        color: #fff;
-        font-family: gotham_black;
-        font-size: 15pt;
-        text-transform: uppercase; }
-      #wrapper .main_section .container_inf .description .description_text {
-        color: #fff;
-        font-family: gotham_black;
-        font-size: 7.2pt; }
-    #wrapper .main_section .sharik {
-      top: 20px;
-      position: relative;
-      left: 57%;
-      width: 50px;
-      height: 50px;
-      border-radius: 100%;
-      background-color: #fff; }
-      #wrapper .main_section .sharik img {
-        position: relative;
-        top: 9px;
-        left: 9px;
-        height: 30px;
-        width: 30px;
-        margin: 0 auto; }
-    #wrapper .main_section .office {
-      left: 60%;
-      top: 145px;
-      position: absolute;
-      width: 383px;
-      height: 574px; }
-  #wrapper footer {
-    height: 140px;
-    width: 100%;
-    background-color: #27a860;
-    margin-bottom: -170px; }
-    #wrapper footer .contact_us {
-      top: 25px;
-      position: relative;
-      left: 500px;
-      height: 65px;
-      width: 190px;
-      font-size: 7,2pt; }
-      #wrapper footer .contact_us p {
-        color: white;
-        font-family: gotham_medium;
-        line-height: 30px; }
+      top: 140px; }
+#wrapper footer {
+  height: 140px;
+  width: 100%;
+  background-color: #27a860;
+  margin-bottom: -170px; }
+  #wrapper footer .contact_us {
+    top: 25px;
+    position: relative;
+    left: 500px;
+    height: 65px;
+    width: 190px;
+    font-size: 7,2pt; }
+    #wrapper footer .contact_us p {
+      color: white;
+      font-family: gotham_medium;
+      line-height: 30px; }
 
 /*# sourceMappingURL=style.css.map */
