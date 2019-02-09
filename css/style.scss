@@ -28,7 +28,7 @@ body{
         border-radius: 0 0 30px 30px ;
        
         .logo{
-            position:absolute;
+            position:relative;
             width: 200px;
             height: 122px;
             background-color:$primary-bcg;
@@ -40,11 +40,11 @@ body{
             }
         }
         .nav_inf{
-            position: absolute;
+            // position: relative;
             width: 200px;
             height: 50px;
             left:537px;
-            top:43px;
+            // top:43px;
             p{
             font-family: gotham_medium;
             line-height: 30px;
@@ -56,9 +56,13 @@ body{
             .service{
                 font-size:13pt;
             }
+        }.menu{
+            position: relative;
+            width:505px;
+
         }
         .options{
-            position:relative;
+            // position:relative;
             left:65%;
             display: flex;
             justify-content: space-around;
@@ -68,7 +72,6 @@ body{
             .home, .notification, .settings, .burger {
                 width:80px;
                 height:122px;
-                // background-color: blue;
                 border-radius: 0 0 30px 30px ;
                 &:hover {
                     background-color: #0c82c3;

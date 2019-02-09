@@ -22,7 +22,7 @@ body {
     border-right-style: none;
     border-radius: 0 0 30px 30px; }
     #wrapper nav .logo {
-      position: absolute;
+      position: relative;
       width: 200px;
       height: 122px;
       background-color: #20253b;
@@ -32,11 +32,9 @@ body {
         margin-left: 60px;
         margin-top: 16px; }
     #wrapper nav .nav_inf {
-      position: absolute;
       width: 200px;
       height: 50px;
-      left: 537px;
-      top: 43px; }
+      left: 537px; }
       #wrapper nav .nav_inf p {
         font-family: gotham_medium;
         line-height: 30px; }
@@ -45,8 +43,10 @@ body {
         font-size: 10pt; }
       #wrapper nav .nav_inf .service {
         font-size: 13pt; }
-    #wrapper nav .options {
+    #wrapper nav .menu {
       position: relative;
+      width: 505px; }
+    #wrapper nav .options {
       left: 65%;
       display: flex;
       justify-content: space-around;
