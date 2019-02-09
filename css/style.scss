@@ -9,7 +9,7 @@ $primary-bcg: #20253b;
 $footer-green: #27a860;
 // variables ends here !!!
 body{
-    width: 100%;
+    // width: 100%;
 	// min-width: 1366px;
 	// max-width: 1900px;
     // margin:0 auto;
@@ -17,11 +17,11 @@ body{
     background-color: #d0d0d0;
 }
 #wrapper{
-    // width: 100%;
-	// min-width: 1366px;
-	// max-width: 1900px;
-    // height: 100%;
-    // margin:0 auto;
+    width: 100%;
+	min-width: 1366px;
+	max-width: 1900px;
+    height: 100%;
+    margin:0 auto;
     nav{
         background-color: #fff;
         width:100%;
@@ -106,7 +106,6 @@ body{
         .main_section{
         display:relative;
         width:100%;
-        // width:1366px;
         margin-top:50px;
         height: 457px;
         background-color: $primary-bcg;
@@ -187,18 +186,14 @@ body{
     footer{
         height: 140px;
         width: 100%;
-        // width: 1366px;
-        // position:relative;
-        // margin:0 auto;
         background-color: $footer-green;
-        // margin-bottom:-170px;
         .footer_content{
             width:1366px;
             position: relative;
             margin:0 auto;
-            left:416px;
         }
            .contact_us{
+            left:416px;
            top:25px;
            position:relative;
            height: 65px;
