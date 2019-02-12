@@ -58,20 +58,26 @@ body {
           width: 80px;
           height: 122px;
           border-radius: 0 0 30px 30px; }
-          #wrapper nav .menu .options .home:hover, #wrapper nav .menu .options .notification:hover, #wrapper nav .menu .options .settings:hover, #wrapper nav .menu .options .burger:hover {
-            background-color: #0c82c3; }
-          #wrapper nav .menu .options .home:active, #wrapper nav .menu .options .notification:active, #wrapper nav .menu .options .settings:active, #wrapper nav .menu .options .burger:active {
-            background-color: #27a860; }
-          #wrapper nav .menu .options .home img, #wrapper nav .menu .options .notification img, #wrapper nav .menu .options .settings img, #wrapper nav .menu .options .burger img {
-            margin-top: 48px;
-            margin-left: 17px; }
-          #wrapper nav .menu .options .home .burger_adv, #wrapper nav .menu .options .notification .burger_adv, #wrapper nav .menu .options .settings .burger_adv, #wrapper nav .menu .options .burger .burger_adv {
-            margin-top: 60px;
-            margin-left: 25px; }
-        #wrapper nav .menu .options .settings :hover {
-          background-image: url(../assets/images/hovset.png); }
-        #wrapper nav .menu .options .settings img :hover {
-          display: none; }
+        #wrapper nav .menu .options .home {
+          background-color: blue;
+          background-image: url(../assets/images/sprite.png);
+          background-position: -15px 9px; }
+          #wrapper nav .menu .options .home:hover {
+            background-color: #20253b; }
+        #wrapper nav .menu .options .notification {
+          background-image: url(../assets/images/sprite.png);
+          background-position: -103px 9px; }
+          #wrapper nav .menu .options .notification:hover {
+            background-image: url(../assets/images/sprite.png);
+            background-position: -103px 149px; }
+        #wrapper nav .menu .options .settings {
+          background-color: blue;
+          background-image: url(../assets/images/sprite.png);
+          background-position: -173px 10px; }
+        #wrapper nav .menu .options .burger {
+          background-color: blue;
+          background-image: url(../assets/images/sprite.png);
+          background-position: -245px 10px; }
   #wrapper .main_content {
     width: 1366px;
     display: relative;
