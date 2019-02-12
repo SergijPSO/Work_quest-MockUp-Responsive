@@ -8,9 +8,9 @@ body {
 
 #wrapper {
   width: 100%;
-  min-width: 1366px;
+  min-width: 1280px;
   max-width: 1900px;
-  height: 100%;
+  height: 768px;
   margin: 0 auto; }
   #wrapper nav {
     background-color: #fff;
@@ -19,67 +19,69 @@ body {
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
     border-left-style: none;
     border-right-style: none;
-    border-radius: 0 0 30px 30px; }
+    border-radius: 0 0 50px 50px; }
     #wrapper nav .menu {
       display: flex;
       position: relative;
       margin: 0 auto;
-      width: 1366px; }
+      width: 1280px; }
       #wrapper nav .menu .logo {
         width: 200px;
-        height: 122px;
+        height: 121px;
         background-color: #20253b;
         border-radius: 0 0 30px 30px;
-        margin-left: 215px; }
+        margin-left: 214px; }
         #wrapper nav .menu .logo .logo_image {
-          margin-left: 60px;
-          margin-top: 16px; }
+          margin-left: 51px;
+          margin-top: 23px; }
       #wrapper nav .menu .nav_inf {
         width: 200px;
         height: 50px;
-        margin-left: 125px;
-        margin-top: 43px; }
+        margin-left: 121px;
+        margin-top: 45px; }
         #wrapper nav .menu .nav_inf p {
           font-family: gotham_medium;
-          line-height: 30px; }
+          line-height: 34px; }
         #wrapper nav .menu .nav_inf .service_inf {
           color: #27a860;
-          font-size: 13px; }
+          font-size: 14.5px; }
         #wrapper nav .menu .nav_inf .service {
-          font-size: 20px; }
+          font-size: 27px; }
       #wrapper nav .menu .options {
-        margin-left: 131px;
+        margin-left: 198px;
         display: flex;
-        justify-content: space-around;
-        width: 500px;
         width: 340px;
         height: 122px; }
         #wrapper nav .menu .options .home, #wrapper nav .menu .options .notification, #wrapper nav .menu .options .settings, #wrapper nav .menu .options .burger {
-          width: 80px;
+          width: 78px;
           height: 122px;
           border-radius: 0 0 30px 30px; }
         #wrapper nav .menu .options .home {
-          background-color: blue;
+          background-color: #0c82c3;
           background-image: url(../assets/images/sprite.png);
-          background-position: -15px 9px; }
+          background-position: -1px 132px; }
           #wrapper nav .menu .options .home:hover {
-            background-color: #20253b; }
+            background-color: #283f79; }
         #wrapper nav .menu .options .notification {
           background-image: url(../assets/images/sprite.png);
-          background-position: -103px 9px; }
+          background-position: -93px 270px; }
           #wrapper nav .menu .options .notification:hover {
             background-image: url(../assets/images/sprite.png);
-            background-position: -103px 149px; }
+            background-position: -93px 134px; }
         #wrapper nav .menu .options .settings {
-          background-color: blue;
           background-image: url(../assets/images/sprite.png);
-          background-position: -173px 10px; }
+          background-position: -189px -34px; }
+          #wrapper nav .menu .options .settings:hover {
+            background-image: url(../assets/images/sprite.png);
+            background-position: -189px -170px; }
         #wrapper nav .menu .options .burger {
-          background-color: blue;
           background-image: url(../assets/images/sprite.png);
-          background-position: -245px 10px; }
+          background-position: -276px -34px; }
+          #wrapper nav .menu .options .burger:hover {
+            background-image: url(../assets/images/sprite.png);
+            background-position: -276px -170px; }
   #wrapper .main_content {
-    width: 1366px;
+    width: 1280px;
     display: relative;
     margin: 0 auto; }
   #wrapper .main_section {
@@ -90,45 +92,44 @@ body {
     background-color: #20253b; }
     #wrapper .main_section .lang {
       position: absolute;
-      height: 40px;
-      width: 70px;
+      height: 50px;
+      width: 95px;
       cursor: pointer;
       background-color: #d0d0d0;
       border-radius: 0 30px 30px 0;
-      top: 520px; }
+      top: 511px; }
       #wrapper .main_section .lang .language {
         color: white;
-        font-family: gotham_black;
-        font-size: 15pt;
+        font-family: gotham_medium;
+        font-size: 21px;
         text-align: center;
-        margin-top: 7px; }
+        margin-top: 13px; }
     #wrapper .main_section .main_content {
-      width: 1366px;
+      width: 1280px;
       display: flex; }
     #wrapper .main_section .container_inf .description {
-      margin-left: 16%;
+      margin-left: 15.7%;
       margin-right: 72px;
-      width: 480px;
-      height: 296px;
-      left: 20%; }
+      width: 486px;
+      height: 296px; }
       #wrapper .main_section .container_inf .description .description_title {
         color: #fff;
         font-family: gotham_black;
-        font-size: 23px;
+        font-size: 31px;
         text-transform: uppercase;
-        margin-bottom: 20px;
-        margin-top: 40px; }
+        margin-bottom: 16px;
+        margin-top: 41px; }
       #wrapper .main_section .container_inf .description .description_text {
-        text-indent: 1.5em; }
+        text-indent: 0.3em; }
       #wrapper .main_section .container_inf .description .description_text:nth-child(14n) {
         margin-top: 25px; }
       #wrapper .main_section .container_inf .description p {
         color: #fff;
-        font-family: gotham_black;
-        font-size: 13px;
-        line-height: 16px; }
+        font-family: gotham_medium;
+        font-size: 15px;
+        line-height: 19px; }
     #wrapper .main_section .sharik {
-      margin-top: 20px;
+      margin-top: 49px;
       width: 50px;
       height: 50px;
       border-radius: 100%;
@@ -150,19 +151,19 @@ body {
     width: 100%;
     background-color: #27a860; }
     #wrapper footer .footer_content {
-      width: 1366px;
+      width: 1280px;
       position: relative;
       margin: 0 auto; }
     #wrapper footer .contact_us {
-      left: 416px;
-      top: 25px;
+      left: 501px;
+      top: 16px;
       position: relative;
       height: 65px;
       width: 190px;
-      font-size: 7,2pt; }
+      font-size: 15px; }
       #wrapper footer .contact_us p {
         color: white;
         font-family: gotham_medium;
-        line-height: 30px; }
+        line-height: 41px; }
 
 /*# sourceMappingURL=style.css.map */

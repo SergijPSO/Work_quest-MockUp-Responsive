@@ -9,18 +9,13 @@ $primary-bcg: #20253b;
 $footer-green: #27a860;
 // variables ends here !!!
 body{
-    // width: 100%;
-	// min-width: 1366px;
-	// max-width: 1900px;
-    // margin:0 auto;
-    // display:relative;
     background-color: #d0d0d0;
 }
 #wrapper{
     width: 100%;
-	min-width: 1366px;
+	min-width: 1280px;
 	max-width: 1900px;
-    height: 100%;
+    height: 768px;
     margin:0 auto;
     nav{
         background-color: #fff;
@@ -29,91 +24,87 @@ body{
         box-shadow: 0 2px 10px 0 rgba(0,0,0,0.10);
         border-left-style: none;
         border-right-style: none;
-        border-radius: 0 0 30px 30px ;
+        border-radius: 0 0 50px 50px ;
         .menu{
             display: flex;
             position: relative;
             margin: 0 auto;
-            width: 1366px;
+            width: 1280px;
             .logo{
             width: 200px;
-            height: 122px;
+            height: 121px;
             background-color:$primary-bcg;
             border-radius: 0 0 30px 30px ;
-            margin-left:215px;
+            margin-left:214px;
             .logo_image{
-                margin-left: 60px;
-                margin-top: 16px;
+                margin-left: 51px;
+                margin-top: 23px;
             }
         }
         .nav_inf{
             width: 200px;
             height: 50px;
-            margin-left:125px;
-            margin-top:43px;
+            margin-left:121px;
+            margin-top:45px;
             p{
-            font-family: gotham_medium;
-            line-height: 30px;
+                font-family: gotham_medium;
+                line-height: 34px;
             }
             .service_inf{
                 color:$footer-green;
-                font-size:13px;
+                font-size:14.5px;
             }
             .service{
-                font-size:20px;
+                font-size:27px;
             }
         }
             .options{
-            margin-left:131px;
+            margin-left:198px;
             display: flex;
-            justify-content: space-around;
-            width: 500px;
             width:340px;
             height: 122px;
                 .home, .notification, .settings, .burger {
-                width:80px;
+                width:78px;
                 height:122px;
                 border-radius: 0 0 30px 30px ;
                 }
                 .home {
-                background-color: blue;
+                background-color:#0c82c3; 
                 background-image: url(../assets/images/sprite.png);
-                background-position: -15px 9px; 
+                background-position: -1px 132px; 
                     &:hover{
-                    background-color:$primary-bcg;
+                    background-color:#283f79;
                     }
                 }
                 .notification {
-                // background-color: blue;
                 background-image: url(../assets/images/sprite.png);
-                background-position: -103px 9px; 
+                background-position: -93px 270px; 
                     &:hover{
-                        // background-color: blue;
                         background-image: url(../assets/images/sprite.png);
-                        background-position: -103px 149px;
+                        background-position: -93px 134px;
                     }
                 }
                 .settings {
-                background-color: blue;
                 background-image: url(../assets/images/sprite.png);
-                background-position: -173px 10px;
-                    //  &:hover{
-                    
-                    // }
+                background-position: -189px -34px;
+                     &:hover{
+                        background-image: url(../assets/images/sprite.png);
+                        background-position: -189px -170px;
+                    }
                 }
                 .burger {
-                background-color: blue;
                 background-image: url(../assets/images/sprite.png);
-                background-position: -245px 10px; 
-                    //  &:hover{
-                    
-                    // }
+                background-position: -276px -34px; 
+                     &:hover{
+                        background-image: url(../assets/images/sprite.png);
+                        background-position: -276px -170px;
+                    }
                 }
             }
         }
     }
     .main_content{
-        width:1366px;
+        width:1280px;
         display:relative;
         margin:0 auto;
     }
@@ -125,57 +116,56 @@ body{
         background-color: $primary-bcg;
         .lang{
             position:absolute;
-            height:40px;
-            width: 70px;
+            height:50px;
+            width: 95px;
             cursor: pointer;
             background-color: #d0d0d0;
             border-radius: 0 30px 30px 0;
-            top:520px;
+            top:511px;
            
             .language {
                 color:white;
-                font-family: gotham_black;
-                font-size:15pt;
+                font-family: gotham_medium;
+                font-size:21px;
                 text-align: center;
-                margin-top:7px;
+                margin-top:13px;
             }
         }
         .main_content{
-            width:1366px;
+            width:1280px;
             display: flex;
         }
         .container_inf{
             .description{
-            margin-left: 16%;
+            margin-left: 15.7%;
             margin-right:72px;
-            width:480px;
+            width:486px;
             height: 296px;
-            left:20%;
                 .description_title{
                 color:#fff;
                 font-family: gotham_black;
-                font-size:23px;
+                font-size:31px;
                 text-transform:uppercase;
-                margin-bottom:20px;
-                margin-top:40px;
+                margin-bottom:16px;
+                margin-top:41px;
                 }
                 .description_text{
-                text-indent:1.5em;
+                text-indent: 0.3em;
                 }
                 .description_text:nth-child(14n){
                     margin-top:25px;
                 }
                 p{
-                    color:#fff;
-                font-family: gotham_black;
-                font-size:13px;
-                line-height:16px;
+                color:#fff;
+                font-family: gotham_medium;
+                font-size:15px;
+                line-height:19px;
                 }
             }   
         }
-             
+
         .sharik{
-            margin-top:20px;
+            margin-top:49px;
             width: 50px;
             height: 50px;
             border-radius: 100%;
@@ -202,21 +192,21 @@ body{
         width: 100%;
         background-color: $footer-green;
         .footer_content{
-            width:1366px;
+            width:1280px;
             position: relative;
             margin:0 auto;
         }
            .contact_us{
-            left:416px;
-           top:25px;
+            left:501px;
+           top:16px;
            position:relative;
            height: 65px;
            width:190px;
-           font-size:7,2pt;
+           font-size:15px;
            p{
                color:white;
                font-family:gotham_medium;
-               line-height: 30px;              
+               line-height: 41px;              
            }
        }
     }
