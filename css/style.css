@@ -104,6 +104,8 @@ body {
         font-size: 21px;
         text-align: center;
         margin-top: 13px; }
+    #wrapper .main_section .lang:hover {
+      background-color: #7c7979; }
     #wrapper .main_section .main_content {
       width: 1280px;
       display: flex; }
@@ -133,12 +135,19 @@ body {
       width: 50px;
       height: 50px;
       border-radius: 100%;
-      background-color: #fff; }
+      background-color: #fff;
+      transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      transition: all 1s;
+      transition-timing-function: ease-out; }
       #wrapper .main_section .sharik img {
-        margin-top: 9px;
-        margin-left: 9px;
+        margin-top: 9.2px;
+        margin-left: 9.7px;
         height: 30px;
         width: 30px; }
+      #wrapper .main_section .sharik:hover {
+        transform: rotate(720deg); }
     #wrapper .main_section .office {
       margin-right: 25px;
       width: 383px;
