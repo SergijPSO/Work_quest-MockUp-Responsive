@@ -103,9 +103,14 @@ body {
         font-family: gotham_medium;
         font-size: 21px;
         text-align: center;
-        margin-top: 13px; }
+        margin-top: 13px;
+        -webkit-animation: slide 2s;
+        -webkit-animation-delay: 1s;
+        animation: slide 2s;
+        animation-delay: 1s; }
     #wrapper .main_section .lang:hover {
-      background-color: #7c7979; }
+      background-color: #283f79;
+      transition: 1s; }
     #wrapper .main_section .main_content {
       width: 1280px;
       display: flex; }
