@@ -71,21 +71,25 @@ body{
                 }
                 .home {
                     background-color:#0c82c3; 
-                    background-image: url(../assets/images/sprite.png);
-                    background-position: -1px 132px; 
+                    // background-image: url(../assets/images/sprite.png);
+                    // background-position: -1px 132px; 
                     -webkit-box-shadow: inset 0 0 0 0 #283f79 ;
                     -moz-box-shadow: inset 0 0 0 0 #283f79 ;
                         box-shadow: inset 0 0 0 0 #283f79 ;
                     -webkit-transition: ease-out 1s;
                     -moz-transition: ease-out 1s;
-                        transition: ease-out 1s;
+                    transition: ease-out 1s;
+                    img{
+                        margin-left:19px;
+                        margin-top:52px;
+                    }
                 }
                 .slide_right:hover, .slide_right:focus{
-                    position: relative;
-                    background-image: url(../assets/images/sprite.png);
-                     -webkit-box-shadow: inset 0 122px 0 0 #283f79 ;
-                    -moz-box-shadow: inset 0 122px 0 0 #283f79 ;
-                        box-shadow: inset 0 122px 0 0 #283f79 ;
+                    // position: relative;
+                    // background-image: url(../assets/images/sprite.png);
+                     -webkit-box-shadow: inset 0 122px 0 0.01px #283f79 ;
+                    -moz-box-shadow: inset 0 122px 0 0.01px #283f79 ;
+                        box-shadow: inset 0 122px 0 0.01px #283f79 ;
                     }
                 .notification {
                     background-image: url(../assets/images/sprite.png);
@@ -135,7 +139,6 @@ body{
             top:511px;
                 transition-property: background-color;
                 transition-duration: 3s;
-                  
             .language {
                 color:white;
                 font-family: gotham_medium;

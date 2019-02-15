@@ -58,20 +58,19 @@ body {
           border-radius: 0 0 30px 30px; }
         #wrapper nav .menu .options .home {
           background-color: #0c82c3;
-          background-image: url(../assets/images/sprite.png);
-          background-position: -1px 132px;
           -webkit-box-shadow: inset 0 0 0 0 #283f79;
           -moz-box-shadow: inset 0 0 0 0 #283f79;
           box-shadow: inset 0 0 0 0 #283f79;
           -webkit-transition: ease-out 1s;
           -moz-transition: ease-out 1s;
           transition: ease-out 1s; }
+          #wrapper nav .menu .options .home img {
+            margin-left: 19px;
+            margin-top: 52px; }
         #wrapper nav .menu .options .slide_right:hover, #wrapper nav .menu .options .slide_right:focus {
-          position: relative;
-          background-image: url(../assets/images/sprite.png);
-          -webkit-box-shadow: inset 0 122px 0 0 #283f79;
-          -moz-box-shadow: inset 0 122px 0 0 #283f79;
-          box-shadow: inset 0 122px 0 0 #283f79; }
+          -webkit-box-shadow: inset 0 122px 0 0.01px #283f79;
+          -moz-box-shadow: inset 0 122px 0 0.01px #283f79;
+          box-shadow: inset 0 122px 0 0.01px #283f79; }
         #wrapper nav .menu .options .notification {
           background-image: url(../assets/images/sprite.png);
           background-position: -93px 270px; }
