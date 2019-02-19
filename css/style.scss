@@ -1,14 +1,12 @@
-// Browser default reset styles
 @import "mixins.scss";
-
+// Browser default reset styles
 * {
-    padding:0;
-    margin:0;
-    list-style: none;
+padding:0;
+margin:0;
+list-style: none;
 }
-
-body {
-    background-color: $bcg_gray;
+// Browser default reset styles
+body {background-color: $bcg_gray;
 }
 #wrapper{
     width: 100%;
@@ -21,9 +19,7 @@ body {
             .nav_inf{@include nav_inf_styles;}   
             .options{@include options_styles;
                 .home, .notification, .settings, .burger {@include menu_items_same;}
-                .home {
-                    @include home_item_styles;
-                }
+                .home {@include home_item_styles;}
                 .slide_right:hover, .slide_right:focus{@include slide_home;}
                 .notification {@include notifications_item;}
                 .settings {@include settings_styles;}
@@ -32,9 +28,8 @@ body {
         }
     }
         .main_content   {
-            width:1280px;
-            display:relative;
-            margin:0 auto;
+        display:relative;
+        margin:0 auto;
         }
         .main_section{
         display:relative;
@@ -48,25 +43,25 @@ body {
             width: 95px;
             cursor: pointer;
             background-color: $bcg_gray;
-            -moz-border-radius: 0 30px 30px 0;
-            -webkit-border-radius: 0 30px 30px 0;
-            -o-border-radius: 0 30px 30px 0;
+            // -moz-border-radius: 0 30px 30px 0;
+            // -webkit-border-radius: 0 30px 30px 0;
+            // -o-border-radius: 0 30px 30px 0;
             border-radius: 0 30px 30px 0;
             top:511px;
             .language {
-                color:white;
-                font-family: gotham_medium;
-                font-size:21px;
-                text-align: center;
-                margin-top:13px;     
+        color:white;
+        font-family: gotham_medium;
+        font-size:21px;
+        text-align: center;
+        margin-top:13px;     
             }
         }
         .lang:hover{
-            background-color: #283f79 ;
+        background-color: #283f79 ;
         }   
         .main_content{
-            width:1280px;
-            display: flex;
+        width:1280px;
+        display: flex;
         }
         .container_inf{
             .description{
@@ -96,63 +91,17 @@ body {
                 }
             }   
         }
-        .sharik{
-            margin-top:49px;
-            width: 50px;
-            height: 50px;
-            border-radius: 100%;
-            background-color: #fff;
-            transform:rotate(360deg);
-                -ms-transform:rotate(360deg);
-                -webkit-transform:rotate(360deg);
-                -o-transform:rotate(360deg);
-                 transition: all 1s;
-                transition-timing-function:ease-out;
-            img {
-                margin-top: 9.2px;
-                margin-left:9.7px;
-                height: 30px;
-                width: 30px;
-            }
-            &:hover{
-             transform:rotate(720deg);
-            }
-        }
+        .sharik{@include share_it}
        .office{
             margin-right:25px;
             width:383px;
             height: 571px;
             img {
-                position:absolute;
-                top:140px;
-                z-index:1;
+            position:absolute;
+            top:140px;
+            z-index:1;
             }
         }
     }
-    footer{
-        position:fixed;
-        height: 100%;
-            width: 100%;
-	        min-width: 1280px;
-	        max-width: 1900px;
-        background-color: $footer-green;
-        .footer_content{
-            width:1280px;
-            position: relative;
-            margin:0 auto;
-        }
-           .contact_us{
-            left:501px;
-           top:16px;
-           position:relative;
-           height: 65px;
-           width:190px;
-           font-size:15px;
-           p{
-            color:white;
-            font-family:gotham_medium;
-            line-height: 41px;              
-           }
-       }
-    }
+    footer{ @include my_footer;}
 }

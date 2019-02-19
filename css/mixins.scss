@@ -5,7 +5,6 @@ $footer-green: #27a860;
 $bcg_gray: #d0d0d0;
 //Variables
 
-
 // Header mixins
 @mixin nav_panel{
     background-color: #fff;
@@ -27,10 +26,10 @@ $bcg_gray: #d0d0d0;
     height: 121px;
     background-color:$primary-bcg;
     border-radius: 0 0 30px 30px ;
-    margin-left:214px;
+    margin-left:203px;
     .logo_image{
-        margin-left: 51px;
-        margin-top: 23px;
+    margin-left: 51px;
+    margin-top: 23px;
     }
 }
 
@@ -40,15 +39,15 @@ $bcg_gray: #d0d0d0;
     margin-left:121px;
     margin-top:45px;
     p{
-        font-family: gotham_medium;
-        line-height: 34px;
+    font-family: gotham_medium;
+    line-height: 34px;
     }
     .service_inf{
-        color:$footer-green;
-        font-size:14.5px;
+    color:$footer-green;
+    font-size:14.5px;
     }
     .service{
-        font-size:27px;
+    font-size:27px;
     }
 }
 @mixin options_styles{
@@ -63,37 +62,35 @@ $bcg_gray: #d0d0d0;
     border-radius: 0 0 30px 30px ;
 }
 @mixin home_item_styles{
-     background-color:#0c82c3; 
+    background-color:#0c82c3; 
     -webkit-box-shadow: inset 0 0 0 0 #283f79 ;
-        -moz-box-shadow: inset 0 0 0 0 #283f79 ;
-            box-shadow: inset 0 0 0 0 #283f79 ;
-        -webkit-transition: ease-out 1s;
-        -moz-transition: ease-out 1s;
-    transition: ease-out 1s;
+    -moz-box-shadow: inset 0 0 0 0 #283f79 ;
+        box-shadow: inset 0 0 0 0 #283f79 ;
     img{
-        margin-left:19px;
-        margin-top:52px;
+    margin-left:19px;
+    margin-top:52px;
     }
 }
 @mixin slide_home{
-    -webkit-box-shadow: inset 0 122px 0 0.01px #283f79 ;
-    -moz-box-shadow: inset 0 122px 0 0.01px #283f79 ;
+    // -webkit-box-shadow: inset 0 122px 0 0.01px #283f79 ;
+    // -moz-box-shadow: inset 0 122px 0 0.01px #283f79 ;
     box-shadow: inset 0 122px 0 0.01px #283f79 ;
+    transition: ease-out 1s;
 }
 @mixin notifications_item{
     background-image: url(../assets/images/sprite.png);
     background-position: -93px 270px; 
     &:hover{
-        background-image: url(../assets/images/sprite.png);
-        background-position: -93px 134px;
+    background-image: url(../assets/images/sprite.png);
+    background-position: -93px 134px;
     }
 }
 @mixin settings_styles {
     background-image: url(../assets/images/sprite.png);
     background-position: -189px -34px;
-        &:hover{
-        background-image: url(../assets/images/sprite.png);
-        background-position: -189px -170px;
+    &:hover{
+    background-image: url(../assets/images/sprite.png);
+    background-position: -189px -170px;
     }
 }
 @mixin buger_styles {
@@ -105,3 +102,52 @@ $bcg_gray: #d0d0d0;
     }
 }
 // Header mixins
+
+//Footer mixin
+@mixin my_footer {  
+    position:fixed;
+    height: 100%;
+    width: 100%;
+	min-width: 1280px;
+	max-width: 1900px;
+    background-color: $footer-green;
+    .footer_content{
+    width:1280px;
+    position: relative;
+    margin:0 auto;
+    }
+    .contact_us{
+    left:501px;
+    top:16px;
+    position:relative;
+    height: 65px;
+    width:190px;
+    font-size:15px;
+        p{
+        color:white;
+        font-family:gotham_medium;
+        line-height: 41px;       
+        }
+    }
+}       
+//Footer mixin
+//Share it mixin
+@mixin share_it{
+    margin-top:49px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #fff;
+    transform:rotate(360deg);
+    img {
+    margin-top: 9.2px;
+    margin-left:9.7px;
+    height: 30px;
+    width: 30px;
+    }
+    &:hover{
+    transition: all 2s;
+    transition-timing-function:ease-in;
+    transform:rotate(1440deg);
+    }
+}

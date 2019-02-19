@@ -29,7 +29,7 @@ body {
         height: 121px;
         background-color: #20253b;
         border-radius: 0 0 30px 30px;
-        margin-left: 214px; }
+        margin-left: 203px; }
         #wrapper nav .menu .logo .logo_image {
           margin-left: 51px;
           margin-top: 23px; }
@@ -59,17 +59,13 @@ body {
           background-color: #0c82c3;
           -webkit-box-shadow: inset 0 0 0 0 #283f79;
           -moz-box-shadow: inset 0 0 0 0 #283f79;
-          box-shadow: inset 0 0 0 0 #283f79;
-          -webkit-transition: ease-out 1s;
-          -moz-transition: ease-out 1s;
-          transition: ease-out 1s; }
+          box-shadow: inset 0 0 0 0 #283f79; }
           #wrapper nav .menu .options .home img {
             margin-left: 19px;
             margin-top: 52px; }
         #wrapper nav .menu .options .slide_right:hover, #wrapper nav .menu .options .slide_right:focus {
-          -webkit-box-shadow: inset 0 122px 0 0.01px #283f79;
-          -moz-box-shadow: inset 0 122px 0 0.01px #283f79;
-          box-shadow: inset 0 122px 0 0.01px #283f79; }
+          box-shadow: inset 0 122px 0 0.01px #283f79;
+          transition: ease-out 1s; }
         #wrapper nav .menu .options .notification {
           background-image: url(../assets/images/sprite.png);
           background-position: -93px 270px; }
@@ -89,7 +85,6 @@ body {
             background-image: url(../assets/images/sprite.png);
             background-position: -276px -170px; }
   #wrapper .main_content {
-    width: 1280px;
     display: relative;
     margin: 0 auto; }
   #wrapper .main_section {
@@ -104,9 +99,6 @@ body {
       width: 95px;
       cursor: pointer;
       background-color: #d0d0d0;
-      -moz-border-radius: 0 30px 30px 0;
-      -webkit-border-radius: 0 30px 30px 0;
-      -o-border-radius: 0 30px 30px 0;
       border-radius: 0 30px 30px 0;
       top: 511px; }
       #wrapper .main_section .lang .language {
@@ -147,19 +139,16 @@ body {
       height: 50px;
       border-radius: 100%;
       background-color: #fff;
-      transform: rotate(360deg);
-      -ms-transform: rotate(360deg);
-      -webkit-transform: rotate(360deg);
-      -o-transform: rotate(360deg);
-      transition: all 1s;
-      transition-timing-function: ease-out; }
+      transform: rotate(360deg); }
       #wrapper .main_section .sharik img {
         margin-top: 9.2px;
         margin-left: 9.7px;
         height: 30px;
         width: 30px; }
       #wrapper .main_section .sharik:hover {
-        transform: rotate(720deg); }
+        transition: all 2s;
+        transition-timing-function: ease-in;
+        transform: rotate(1440deg); }
     #wrapper .main_section .office {
       margin-right: 25px;
       width: 383px;
