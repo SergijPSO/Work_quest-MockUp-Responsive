@@ -10,7 +10,6 @@ body {
   width: 100%;
   min-width: 1280px;
   max-width: 1900px;
-  height: 768px;
   margin: 0 auto; }
   #wrapper nav {
     background-color: #fff;
@@ -105,10 +104,11 @@ body {
       width: 95px;
       cursor: pointer;
       background-color: #d0d0d0;
+      -moz-border-radius: 0 30px 30px 0;
+      -webkit-border-radius: 0 30px 30px 0;
+      -o-border-radius: 0 30px 30px 0;
       border-radius: 0 30px 30px 0;
-      top: 511px;
-      transition-property: background-color;
-      transition-duration: 3s; }
+      top: 511px; }
       #wrapper .main_section .lang .language {
         color: white;
         font-family: gotham_medium;
@@ -150,6 +150,7 @@ body {
       transform: rotate(360deg);
       -ms-transform: rotate(360deg);
       -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
       transition: all 1s;
       transition-timing-function: ease-out; }
       #wrapper .main_section .sharik img {
@@ -165,10 +166,14 @@ body {
       height: 571px; }
       #wrapper .main_section .office img {
         position: absolute;
-        top: 140px; }
+        top: 140px;
+        z-index: 1; }
   #wrapper footer {
-    height: 140px;
+    position: fixed;
+    height: 100%;
     width: 100%;
+    min-width: 1280px;
+    max-width: 1900px;
     background-color: #27a860; }
     #wrapper footer .footer_content {
       width: 1280px;

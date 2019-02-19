@@ -1,120 +1,33 @@
 // Browser default reset styles
+@import "mixins.scss";
+
 * {
     padding:0;
     margin:0;
     list-style: none;
 }
-// variables 
-$primary-bcg: #20253b;
-$footer-green: #27a860;
-// variables ends here !!!
-body{
-    background-color: #d0d0d0;
-}
 
+body {
+    background-color: $bcg_gray;
+}
 #wrapper{
     width: 100%;
 	min-width: 1280px;
 	max-width: 1900px;
-    height: 768px;
     margin:0 auto;
-    nav{
-        background-color: #fff;
-        width:100%;
-        height:122px;
-        box-shadow: 0 2px 10px 0 rgba(0,0,0,0.10);
-        border-left-style: none;
-        border-right-style: none;
-        border-radius: 0 0 50px 50px ;
-        .menu{
-            display: flex;
-            position: relative;
-            margin: 0 auto;
-            width: 1280px;
-            .logo{  
-                width: 200px;
-                height: 121px;
-                background-color:$primary-bcg;
-                border-radius: 0 0 30px 30px ;
-                margin-left:214px;
-                .logo_image{
-                    margin-left: 51px;
-                    margin-top: 23px;
-                }
-            }
-            .nav_inf{
-                width: 200px;
-                height: 50px;
-                margin-left:121px;
-                margin-top:45px;
-                p{
-                    font-family: gotham_medium;
-                    line-height: 34px;
-                }
-                .service_inf{
-                    color:$footer-green;
-                    font-size:14.5px;
-                }
-                .service{
-                    font-size:27px;
-                }
-            }   
-            .options{
-            margin-left:198px;
-            display: flex;
-            width:340px;
-            height: 122px;
-                .home, .notification, .settings, .burger {
-                width:78px;
-                height:122px;
-                border-radius: 0 0 30px 30px ;
-                }
+    nav{@include nav_panel;
+        .menu{@include nav_menu_styles;
+            .logo{ @include logo_styles;}
+            .nav_inf{@include nav_inf_styles;}   
+            .options{@include options_styles;
+                .home, .notification, .settings, .burger {@include menu_items_same;}
                 .home {
-                    background-color:#0c82c3; 
-                    // background-image: url(../assets/images/sprite.png);
-                    // background-position: -1px 132px; 
-                    -webkit-box-shadow: inset 0 0 0 0 #283f79 ;
-                    -moz-box-shadow: inset 0 0 0 0 #283f79 ;
-                        box-shadow: inset 0 0 0 0 #283f79 ;
-                    -webkit-transition: ease-out 1s;
-                    -moz-transition: ease-out 1s;
-                    transition: ease-out 1s;
-                    img{
-                        margin-left:19px;
-                        margin-top:52px;
-                    }
+                    @include home_item_styles;
                 }
-                .slide_right:hover, .slide_right:focus{
-                    // position: relative;
-                    // background-image: url(../assets/images/sprite.png);
-                     -webkit-box-shadow: inset 0 122px 0 0.01px #283f79 ;
-                    -moz-box-shadow: inset 0 122px 0 0.01px #283f79 ;
-                        box-shadow: inset 0 122px 0 0.01px #283f79 ;
-                    }
-                .notification {
-                    background-image: url(../assets/images/sprite.png);
-                    background-position: -93px 270px; 
-                    &:hover{
-                        background-image: url(../assets/images/sprite.png);
-                        background-position: -93px 134px;
-                    }
-                }
-                .settings {
-                    background-image: url(../assets/images/sprite.png);
-                    background-position: -189px -34px;
-                     &:hover{
-                        background-image: url(../assets/images/sprite.png);
-                        background-position: -189px -170px;
-                    }
-                }
-                .burger {
-                    background-image: url(../assets/images/sprite.png);
-                    background-position: -276px -34px; 
-                     &:hover{
-                        background-image: url(../assets/images/sprite.png);
-                        background-position: -276px -170px;
-                    }
-                }
+                .slide_right:hover, .slide_right:focus{@include slide_home;}
+                .notification {@include notifications_item;}
+                .settings {@include settings_styles;}
+                .burger {@include buger_styles;}
             }
         }
     }
@@ -134,11 +47,12 @@ body{
             height:50px;
             width: 95px;
             cursor: pointer;
-            background-color: #d0d0d0;
+            background-color: $bcg_gray;
+            -moz-border-radius: 0 30px 30px 0;
+            -webkit-border-radius: 0 30px 30px 0;
+            -o-border-radius: 0 30px 30px 0;
             border-radius: 0 30px 30px 0;
             top:511px;
-                transition-property: background-color;
-                transition-duration: 3s;
             .language {
                 color:white;
                 font-family: gotham_medium;
@@ -191,6 +105,7 @@ body{
             transform:rotate(360deg);
                 -ms-transform:rotate(360deg);
                 -webkit-transform:rotate(360deg);
+                -o-transform:rotate(360deg);
                  transition: all 1s;
                 transition-timing-function:ease-out;
             img {
@@ -210,12 +125,16 @@ body{
             img {
                 position:absolute;
                 top:140px;
+                z-index:1;
             }
         }
     }
     footer{
-        height: 140px;
-        width: 100%;
+        position:fixed;
+        height: 100%;
+            width: 100%;
+	        min-width: 1280px;
+	        max-width: 1900px;
         background-color: $footer-green;
         .footer_content{
             width:1280px;
@@ -230,9 +149,9 @@ body{
            width:190px;
            font-size:15px;
            p{
-               color:white;
-               font-family:gotham_medium;
-               line-height: 41px;              
+            color:white;
+            font-family:gotham_medium;
+            line-height: 41px;              
            }
        }
     }
