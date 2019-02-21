@@ -1,0 +1,11 @@
+@import "mixins.scss";
+// Browser default reset styles
+* {
+padding:0;
+margin:0;
+list-style: none;
+}
+
+body{
+    background-color: $primary-bcg;
+}
